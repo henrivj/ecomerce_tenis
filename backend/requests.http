@@ -21,7 +21,7 @@ GET http://localhost:3000/usuario/1
 
 ###
 
-GET http://localhost:3000/usuario/teste
+GET http://localhost:3000/usuario/nome/teste
 
 ###
 
@@ -59,6 +59,10 @@ GET http://localhost:3000/produtos
 ###
 
 GET http://localhost:3000/produto/1
+
+###
+
+GET http://localhost:3000/produto/nome/teste
 
 ###
 
