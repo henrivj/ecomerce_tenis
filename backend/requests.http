@@ -1,0 +1,79 @@
+GET http://localhost:3000
+
+###
+
+POST http://localhost:3000/usuario
+Content-Type: application/json
+
+{
+  "nome": "teste",
+  "email": "teste@teste.com",
+  "senha": "teste123"
+}
+
+###
+
+GET http://localhost:3000/usuarios
+
+###
+
+GET http://localhost:3000/usuario/1
+
+###
+
+GET http://localhost:3000/usuario/teste
+
+###
+
+PUT http://localhost:3000/usuario/1
+Content-Type: application/json
+
+{
+  "nome": "teste atualizado",
+  "email": "teste2@teste.com",
+  "senha": "teste456"
+}
+
+###
+
+DELETE http://localhost:3000/usuario/1
+
+###
+
+POST http://localhost:3000/produto
+Content-Type: application/json
+
+{
+  "nome": "teste",
+  "categoria": "teste",
+  "numero": 1,
+  "tamanho": 42,
+  "quantidade": 10,
+  "preco": 99.90
+}
+
+###
+
+GET http://localhost:3000/produtos
+
+###
+
+GET http://localhost:3000/produto/1
+
+###
+
+PUT http://localhost:3000/produto/1
+Content-Type: application/json
+
+{
+  "nome": "teste atualizado",
+  "categoria": "teste",
+  "numero": 1,
+  "tamanho": 44,
+  "quantidade": 20,
+  "preco": 149.90
+}
+
+###
+
+DELETE http://localhost:3000/produto/1

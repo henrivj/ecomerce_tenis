@@ -3,7 +3,7 @@ const Produto = require('../models/Produto');
 const cadastrar = async (req, res) => {
 	const valores = req.body;
 
-	if (!valores.nome || !valores.email || !valores.senha) return res.status(400).json({ message: 'Todos os campos devem ser preenchidos' });
+	if (!valores.nome || !valores.categoria || !valores.tamanho || !valores.quantidade || !valores.preco) return res.status(400).json({ message: 'Todos os campos devem ser preenchidos' });
 
 	try {
 		await Produto.create(valores);

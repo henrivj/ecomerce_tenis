@@ -34,7 +34,9 @@ app.get('/', (req, res) => {
 
 db.sync()
 	.then(() => {
-		console.log(`Banco sincronizado e rodando em: http://${host}:${port}`);
+		app.listen(port, host, () => {
+			console.log(`Banco sincronizado e rodando em: http://${host}:${port}`);
+		});
 	})
 	.catch((error) => {
 		console.error('Erro ao sincronizar o banco de dados: ', error);
